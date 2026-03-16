@@ -1,0 +1,16 @@
+public class EstadoEnviado implements EstadoPedido {
+    @Override
+    public void pagar(Pedido pedido) {
+        System.out.println("Pagamento ja processado.");
+    }
+
+    @Override
+    public void cancelar(Pedido pedido) {
+        System.out.println("Impossivel cancelar agora. Por favor, inicie a Logistica Reversa apos o recebimento.");
+    }
+
+    @Override
+    public void despachar(Pedido pedido) {
+        System.out.println("Pedido ja foi enviado.");
+    }
+}
